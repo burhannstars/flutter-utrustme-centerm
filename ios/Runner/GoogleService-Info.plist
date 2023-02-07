@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>140810157816-1724v9r2lkuh1808tqi9jsfls8js51dj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.140810157816-1724v9r2lkuh1808tqi9jsfls8js51dj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA2a0tSE_RBLhtBfuOT3cUTgqfP_ODM6cY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>140810157816</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.gudangvoucher.gvmerchant</string>
+	<key>PROJECT_ID</key>
+	<string>gv-merchant</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gv-merchant.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:140810157816:ios:784fba42e2df266f74850d</string>
+	<key>DATABASE_URL</key>
+	<string>https://gv-merchant.firebaseio.com</string>
+</dict>
+</plist>

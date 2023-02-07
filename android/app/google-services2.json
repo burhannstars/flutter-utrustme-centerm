@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "140810157816",
+    "firebase_url": "https://gv-merchant.firebaseio.com",
+    "project_id": "gv-merchant",
+    "storage_bucket": "gv-merchant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140810157816:android:da92aa10f17e2c8c74850d",
+        "android_client_info": {
+          "package_name": "com.example.gvmerchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140810157816-13ls2o8qu8r6aobdgtr1dbrc828hcde4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzT-gPchrfrTMnGUWh6su4i8BwUsSalv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140810157816-13ls2o8qu8r6aobdgtr1dbrc828hcde4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
