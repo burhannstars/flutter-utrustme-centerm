@@ -138,7 +138,7 @@ class _BankPageState extends State<BankPage> {
           onConfirmBtnTap: () async {
             final myDevice = BluetoothDevice.fromMap({
               'name': 'InnerPrinter',
-              'address': '00:00:00:00:00:01',
+              'address': Config.printerMacAddress,
               'type': '10082'
             });
 
@@ -388,7 +388,7 @@ class _BankPageState extends State<BankPage> {
       if (value == 1) {
         final myDevice = BluetoothDevice.fromMap({
           'name': 'InnerPrinter',
-          'address': '00:00:00:00:00:01',
+          'address': Config.printerMacAddress,
           'type': '10082'
         });
 

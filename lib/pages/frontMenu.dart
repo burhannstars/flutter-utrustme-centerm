@@ -114,7 +114,7 @@ class _FrontMenuState extends State<FrontMenu>
     testPrint = Printing();
     final myDevice = BluetoothDevice.fromMap({
       'name': 'InnerPrinter',
-      'address': '00:00:00:00:00:01',
+      'address': Config.printerMacAddress,
       'type': '10082'
     });
 

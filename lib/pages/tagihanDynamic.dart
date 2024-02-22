@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/foundation.dart'
     show consolidateHttpClientResponseBytes, kIsWeb;
+import 'package:gvmerchant_utrustme/config/config.dart';
 import 'package:gvmerchant_utrustme/model/productCartModel.dart';
 import 'package:gvmerchant_utrustme/network/network.dart';
 import 'package:gvmerchant_utrustme/pages/frontMenu.dart';
@@ -107,7 +108,7 @@ class _TagihanQRDynamicState extends State<TagihanQRDynamic> {
             onConfirmBtnTap: () async {
               final myDevice = BluetoothDevice.fromMap({
                 'name': 'InnerPrinter',
-                'address': '00:00:00:00:00:01',
+                'address': Config.printerMacAddress,
                 'type': '10082'
               });
 
@@ -173,7 +174,7 @@ class _TagihanQRDynamicState extends State<TagihanQRDynamic> {
               print("Cancel Button tap");
               final myDevice = BluetoothDevice.fromMap({
                 'name': 'InnerPrinter',
-                'address': '00:00:00:00:00:01',
+                'address': Config.printerMacAddress',
                 'type': '10082'
               });
 
@@ -226,7 +227,7 @@ class _TagihanQRDynamicState extends State<TagihanQRDynamic> {
                             onPressed: () async {
                               final myDevice = BluetoothDevice.fromMap({
                                 'name': 'InnerPrinter',
-                                'address': '00:00:00:00:00:01',
+                                'address': Config.printerMacAddress',
                                 'type': '10082'
                               });
 

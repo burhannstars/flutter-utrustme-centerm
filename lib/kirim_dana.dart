@@ -310,7 +310,7 @@ class _KirimDanaState extends State<KirimDana> {
       if (value == 1) {
         final myDevice = BluetoothDevice.fromMap({
           'name': 'InnerPrinter',
-          'address': '00:00:00:00:00:01',
+          'address': Config.printerMacAddress,
           'type': '10082'
         });
 

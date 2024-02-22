@@ -221,7 +221,7 @@ class _HomeScreenState extends State<HomeScreen> {
     testPrint = Printing();
     final myDevice = BluetoothDevice.fromMap({
       'name': 'InnerPrinter',
-      'address': '00:00:00:00:00:01',
+      'address': Config.printerMacAddress,
       'type': '10082'
     });
 
@@ -270,7 +270,7 @@ class _HomeScreenState extends State<HomeScreen> {
         timer?.cancel();
         final myDevice = BluetoothDevice.fromMap({
           'name': 'InnerPrinter',
-          'address': '00:00:00:00:00:01',
+          'address': Config.printerMacAddress,
           'type': '10082'
         });
 
@@ -324,7 +324,7 @@ class _HomeScreenState extends State<HomeScreen> {
       if (value == 1) {
         final myDevice = BluetoothDevice.fromMap({
           'name': 'InnerPrinter',
-          'address': '00:00:00:00:00:01',
+          'address': Config.printerMacAddress,
           'type': '10082'
         });
 
@@ -641,7 +641,7 @@ class _HomeScreenState extends State<HomeScreen> {
       if (value == 1) {
         final myDevice = BluetoothDevice.fromMap({
           'name': 'InnerPrinter',
-          'address': '00:00:00:00:00:01',
+          'address': Config.printerMacAddress,
           'type': '10082'
         });
 
@@ -716,7 +716,7 @@ class _HomeScreenState extends State<HomeScreen> {
       if (value == 1) {
         final myDevice = BluetoothDevice.fromMap({
           'name': 'InnerPrinter',
-          'address': '00:00:00:00:00:01',
+          'address': Config.printerMacAddress,
           'type': '10082'
         });
 

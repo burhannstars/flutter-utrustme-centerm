@@ -5,6 +5,7 @@ import 'dart:typed_data';
 import 'package:blue_thermal_printer/blue_thermal_printer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gvmerchant_utrustme/config/config.dart';
 import 'package:gvmerchant_utrustme/network/network.dart';
 import 'package:gvmerchant_utrustme/pages/frontMenu.dart';
 import 'package:gvmerchant_utrustme/pages/tagihanDynamic.dart';
@@ -143,7 +144,7 @@ class CheckoutRepository {
           if (data[0]['item'] != null) {
             final myDevice = BluetoothDevice.fromMap({
               'name': 'InnerPrinter',
-              'address': '00:00:00:00:00:01',
+              'address': Config.printerMacAddress',
               'type': '10082'
             });
 
@@ -226,7 +227,7 @@ class CheckoutRepository {
                                 if (data[0]['item'] != null) {
                                   final myDevice = BluetoothDevice.fromMap({
                                     'name': 'InnerPrinter',
-                                    'address': '00:00:00:00:00:01',
+                                    'address': Config.printerMacAddress,
                                     'type': '10082'
                                   });
 
