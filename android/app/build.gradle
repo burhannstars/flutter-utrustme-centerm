@@ -51,6 +51,9 @@ android {
     }
 
     signingConfigs {
+        dev {
+            v2SigningEnabled true
+        }
         release {
             storeFile file(keystoreProperties['storeFile'])
             storePassword keystoreProperties['storePassword']

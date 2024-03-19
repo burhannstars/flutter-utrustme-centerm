@@ -155,7 +155,7 @@ class _BankPageState extends State<BankPage> {
               bluetooth.printNewLine();
               bluetooth.printImage(pathImage);
               bluetooth.printNewLine();
-              bluetooth.printCustom(merchantName, 2, 1);
+              bluetooth.printCustom(merchantName, 1, 1);
               bluetooth.printCustom(city, 1, 1);
               bluetooth.printNewLine();
               bluetooth.printNewLine();
@@ -175,8 +175,8 @@ class _BankPageState extends State<BankPage> {
               bluetooth.printCustom("--------------------------------", 1, 1);
 
               //bluetooth.printLeftRight("Metode", "QRIS", 1);
-              bluetooth.printCustom("TERIMA/PURCHASE", 2, 1);
-              bluetooth.printCustom("VA", 2, 1);
+              bluetooth.printCustom("TERIMA/PURCHASE", 1, 1);
+              bluetooth.printCustom("VA", 1, 1);
               bluetooth.printNewLine();
               bluetooth.printCustom("BANK     : " + data['bank'], 1, 0);
               bluetooth.printCustom("NOMINAL  : Rp. " + data['amount'], 1, 0);
@@ -408,41 +408,41 @@ class _BankPageState extends State<BankPage> {
           bluetooth.printImage(pathImage);
           bluetooth.printNewLine();
           if (merchantName.length > 15) {
-            bluetooth.printCustom(merchantName.substring(0, 15), 3, 1);
-            bluetooth.printCustom(merchantName.substring(15), 3, 1);
+            bluetooth.printCustom(merchantName.substring(0, 15), 1, 1);
+            bluetooth.printCustom(merchantName.substring(15), 1, 1);
           } else {
-            bluetooth.printCustom(merchantName, 3, 1);
+            bluetooth.printCustom(merchantName, 1, 1);
           }
-          bluetooth.printCustom(city, 2, 1);
+          bluetooth.printCustom(city, 1, 1);
           bluetooth.printNewLine();
           bluetooth.printNewLine();
           //bluetooth.printCustom("Transaksi QRIS Berhasil", 1, 1);
           /*bluetooth.printLeftRight("TerminalID : ", data['terminal_id'], 1);
               bluetooth.printLeftRight("MerchantID : ", data['merchant_id'], 1);
               bluetooth.printNewLine();*/
-          bluetooth.printLeftRight("Tanggal    : ", data['order_date'], 2);
-          bluetooth.printLeftRight("Jam        : ", data['order_time'], 2);
+          bluetooth.printLeftRight("Tanggal    : ", data['order_date'], 1);
+          bluetooth.printLeftRight("Jam        : ", data['order_time'], 1);
           //bluetooth.printLeftRight("Ref : ", data['reference'], 1);
-          bluetooth.printLeftRight("NO REFF    : ", "", 2);
-          bluetooth.printCustom(data['reference'], 2, 1);
+          bluetooth.printLeftRight("NO REFF    : ", "", 1);
+          bluetooth.printCustom(data['reference'], 1, 1);
 
-          bluetooth.printCustom("--------------------------------", 2, 1);
+          bluetooth.printCustom("--------------------------------", 1, 1);
 
           //bluetooth.printLeftRight("Metode", "QRIS", 1);
-          bluetooth.printCustom("TERIMA/PURCHASE", 2, 1);
-          bluetooth.printCustom("VA", 2, 1);
+          bluetooth.printCustom("TERIMA/PURCHASE", 1, 1);
+          bluetooth.printCustom("VA", 1, 1);
           bluetooth.printNewLine();
-          bluetooth.printCustom("BANK     : " + data['bank'], 2, 0);
-          bluetooth.printCustom("NOMINAL  : Rp. " + data['amount'], 2, 0);
+          bluetooth.printCustom("BANK     : " + data['bank'], 1, 0);
+          bluetooth.printCustom("NOMINAL  : Rp. " + data['amount'], 1, 0);
           /*bluetooth.printLeftRight("BANK", data['bank'], 1);
           bluetooth.printLeftRight("NOMINAL", "Rp " + data['amount'], 1);*/
-          bluetooth.printCustom("--------------------------------", 2, 1);
+          bluetooth.printCustom("--------------------------------", 1, 1);
           bluetooth.printNewLine();
-          bluetooth.printCustom("HARAP TANDA TERIMA INI DISIMPAN", 2, 1);
-          bluetooth.printCustom("SEBAGAI BUKTI TRANSAKSI", 2, 1);
-          bluetooth.printCustom("YANG SAH", 2, 1);
+          bluetooth.printCustom("HARAP TANDA TERIMA INI DISIMPAN", 1, 1);
+          bluetooth.printCustom("SEBAGAI BUKTI TRANSAKSI", 1, 1);
+          bluetooth.printCustom("YANG SAH", 1, 1);
           bluetooth.printNewLine();
-          bluetooth.printCustom("***TERIMA KASIH***", 2, 1);
+          bluetooth.printCustom("***TERIMA KASIH***", 1, 1);
           bluetooth.printNewLine();
           bluetooth.printNewLine();
           bluetooth.printNewLine();

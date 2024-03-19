@@ -123,7 +123,8 @@ class NetworkUrl {
   }
 
   static String checkQRIStrx() {
-    return "$url/checkQRIStrx.php";
+    //return "$url/checkQRIStrx.php";
+    return "$url/checkQRIStrx_new.php";
   }
 
   static String printQRISHistory() {

@@ -330,25 +330,25 @@ class _KirimDanaState extends State<KirimDana> {
           bluetooth.printImage(pathImage);
           bluetooth.printNewLine();
           if (merchantName.length > 15) {
-            bluetooth.printCustom(merchantName.substring(0, 15), 3, 1);
-            bluetooth.printCustom(merchantName.substring(15), 3, 1);
+            bluetooth.printCustom(merchantName.substring(0, 15), 1, 1);
+            bluetooth.printCustom(merchantName.substring(15), 1, 1);
           } else {
-            bluetooth.printCustom(merchantName, 3, 1);
+            bluetooth.printCustom(merchantName, 1, 1);
           }
-          bluetooth.printCustom(city, 2, 1);
+          bluetooth.printCustom(city, 1, 1);
           bluetooth.printNewLine();
-          bluetooth.printCustom("TRANSFER BERHASIL", 2, 1);
+          bluetooth.printCustom("TRANSFER BERHASIL", 1, 1);
           bluetooth.printNewLine();
-          bluetooth.printLeftRight("Tanggal    : ", data['transfer_date'], 2);
-          bluetooth.printLeftRight("Jam        : ", data['transfer_time'], 2);
-          bluetooth.printLeftRight("NO REFF ", "", 2);
-          bluetooth.printCustom(data['reference'], 2, 1);
+          bluetooth.printLeftRight("Tanggal    : ", data['transfer_date'], 1);
+          bluetooth.printLeftRight("Jam        : ", data['transfer_time'], 1);
+          bluetooth.printLeftRight("NO REFF ", "", 1);
+          bluetooth.printCustom(data['reference'], 1, 1);
 
           // bluetooth.writeBytes(
           //     Uint8List.fromList([0x1b, 0x61, 0x01])); //ESC_ALIGN_CENTER
 
-          bluetooth.printCustom("--------------------------------", 2, 1);
-          bluetooth.printCustom("TUJUAN", 2, 1);
+          bluetooth.printCustom("--------------------------------", 1, 1);
+          bluetooth.printCustom("TUJUAN", 1, 1);
           bluetooth.printNewLine();
           /*if (data['receiver_name'].toString().length > 19) {
             bluetooth.printCustom(
@@ -363,17 +363,17 @@ class _KirimDanaState extends State<KirimDana> {
           } else {
             bluetooth.printCustom("NAMA     : " + data['receiver_name'], 2, 0);
           }*/
-          bluetooth.printCustom("NAMA     : " + data['receiver_name'], 2, 0);
-          bluetooth.printCustom("REKENING : " + data['receiver_number'], 2, 0);
-          bluetooth.printCustom("BANK     : " + data['bank'], 2, 0);
-          bluetooth.printCustom("JUMLAH   : " + data['amount'], 2, 0);
-          bluetooth.printCustom("--------------------------------", 2, 1);
+          bluetooth.printCustom("NAMA     : " + data['receiver_name'], 1, 0);
+          bluetooth.printCustom("REKENING : " + data['receiver_number'], 1, 0);
+          bluetooth.printCustom("BANK     : " + data['bank'], 1, 0);
+          bluetooth.printCustom("JUMLAH   : " + data['amount'], 1, 0);
+          bluetooth.printCustom("--------------------------------", 1, 1);
           bluetooth.printNewLine();
-          bluetooth.printCustom("HARAP TANDA TERIMA INI DISIMPAN", 2, 1);
-          bluetooth.printCustom("SEBAGAI BUKTI TRANSAKSI", 2, 1);
-          bluetooth.printCustom("YANG SAH", 2, 1);
+          bluetooth.printCustom("HARAP TANDA TERIMA INI DISIMPAN", 1, 1);
+          bluetooth.printCustom("SEBAGAI BUKTI TRANSAKSI", 1, 1);
+          bluetooth.printCustom("YANG SAH", 1, 1);
           bluetooth.printNewLine();
-          bluetooth.printCustom("***TERIMA KASIH***", 2, 1);
+          bluetooth.printCustom("***TERIMA KASIH***", 1, 1);
           bluetooth.printNewLine();
           bluetooth.printNewLine();
           bluetooth.printNewLine();
